@@ -23,10 +23,10 @@ As the dataset is small, K-Fold Cross Validation is a good method to ensure that
 
 ## Results
 
-The best accuracies obtained were as follows: \n
-Train Set: 91.23\n
-Validation Set: 89.7727\n
-Test Set: 77.2727\n
+The best accuracies obtained were as follows: <br />
+Train Set: 91.23<br />
+Validation Set: 89.7727<br />
+Test Set: 77.2727<br />
 
 Confusion matrix
 

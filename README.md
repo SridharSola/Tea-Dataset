@@ -13,7 +13,7 @@ I first went through the existing literature on the leaf disease problem. I chos
 ResNet18 fulfilled these two criterea. It has been used on numerous tasks and has only 11M trainable parameters. Further, LeafNet, an architecture for the particular problem of leaf disease detection, uses ResNet50 as its backbone -- further reason to consider a ResNet variant. 
 
 ## Note of Hyperparameters
-I set the initial learning rate to 0.0001 with weight decay of 0.003 and momentum 0.9. The learning rate was decreased by a factor of 10 at the 14th epoch. The model was trained for 25 epochs. After each epoch, the model tested on the validation set. At the end of training, the model's performance was evaluated on the test set. 
+I set the initial learning rate to 0.0001 with weight decay of 0.003 and momentum 0.9. The learning rate was decreased by a factor of 10 at the 14th, 20th, and 25th epochs. The model was trained for 30 epochs. After each epoch, the model tested on the validation set. At the end of training, the model's performance was evaluated on the test set. 
 
 ## Note on Datasplit
 I use the 80/10/10 split to divide the images into train, validation, and test sets. As a result, the train set has 709 images, the test set has 88 images, and the validation set has 88 images. 
@@ -24,8 +24,8 @@ As the dataset is small, K-Fold Cross Validation is a good method to ensure that
 ## Results
 
 The best accuracies obtained were as follows: <br />
-Train Set: 91.23<br />
-Validation Set: 89.7727<br />
+Train Set: 92.23<br />
+Validation Set: 89.989<br />
 Test Set: 77.2727<br />
 
 Confusion matrix
